@@ -9,6 +9,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     FlexLayoutModule,
     AppRoutingModule,
     BrowserAnimationsModule,
