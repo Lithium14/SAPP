@@ -1,3 +1,4 @@
+import { GuestModule } from './pages/guest/guest.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -11,6 +12,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
+    GuestModule,
     HttpClientModule,
     FlexLayoutModule,
     AppRoutingModule,

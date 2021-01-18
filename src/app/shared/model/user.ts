@@ -4,6 +4,7 @@ export class User {
   public lastname?: string;
   public email?: string;
   public password?: string;
+  public token?: string;
 
   constructor(input?: User){
     Object.assign(this,input);
